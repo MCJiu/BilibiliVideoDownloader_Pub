@@ -13,7 +13,7 @@
 - [requests](https://pypi.org/project/requests/)
 - [loguru](https://pypi.org/project/loguru/)
 
-也可直接从Release下载使用已封装版本（使用pyinstaller打包）
+也可直接从[Release](https://github.com/MCJiu/BilibiliVideoDownloader_Pub/releases)下载使用已封装版本（使用pyinstaller打包）
 ## 使用提示
 - 可以不经cookie鉴权下载视频，但只能下载非登录用户可观看的视频和清晰度
 - 若要下载需大会员权限的影视和番剧等内容，请使用具有相应权限的账号登录，获取cookie(SESSDATA)。

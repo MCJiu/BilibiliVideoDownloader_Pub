@@ -1,6 +1,7 @@
 import download_video
 import download_bangumi
 from menu import main_menu
+from merge import mergeVA
 # --main--
 cookie = {}
 
@@ -30,6 +31,9 @@ while True:
             if urls != 0:
                 if download_video.downloader(urls):
                     print("\033[32;1m" + "Download successfully!" + "\033[0m")
+                    print("\033[32;1m" + "Merging!" + "\033[0m")
+                    mergeVA("video.mp4", "audio.wav")
+                    print("\033[32;1m" + "Merged!" + "\033[0m")
                 else:
                     print("\033[31;1m" + "Download faild!" + "\033[0m")
     elif choice == "c":
@@ -45,6 +49,9 @@ while True:
         if urls != 0:
             if download_bangumi.downloader(urls):
                 print("\033[32;1m" + "Download successfully!" + "\033[0m")
+                print("\033[32;1m" + "Merging!" + "\033[0m")
+                mergeVA("video.mp4", "audio.wav")
+                print("\033[32;1m" + "Merged!" + "\033[0m")
             else:
                 print("\033[31;1m" + "Download faild!" + "\033[0m")
     elif choice == "d":
